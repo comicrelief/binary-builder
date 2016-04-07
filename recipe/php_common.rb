@@ -138,7 +138,7 @@ class MemcachedPeclRecipe < PeclRecipe
   def configure_options
     [
       "--with-php-config=#{@php_path}/bin/php-config",
-      '--disable-memcached-sasl',
+      '--enable-memcached-sasl',
       '--enable-memcached-msgpack',
       '--enable-memcached-igbinary',
       '--enable-memcached-json'
